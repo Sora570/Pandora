@@ -1,0 +1,366 @@
+.header{
+    width: 100%;
+    height: 50px;
+    background-color: #1c18db;
+    display: table;
+}
+
+.header .logo{
+    float: left;
+    display: table-cell;
+}
+
+.header .logo img{
+    width: 95px;
+    height: 58px;
+    border-radius: 50px;
+}
+
+.header .other{
+    text-decoration: none;
+    color: white;
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 26px;
+    font-family: fantasy;
+}
+
+.header .other a{
+    text-decoration: none;
+    color: white;
+}
+
+.header .sign{
+    display: table-cell;
+    vertical-align: middle;
+    float: right;
+}
+
+.header .sign a{
+    text-decoration: none;
+    color: white;
+    float: right;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 26px;
+}
+
+.header .sign a:hover{
+    background-color: #111e6c;
+}
+
+.header .search-container{
+    float: right;
+}
+
+.header input[type=text] {
+    padding: 6px;
+    margin-top: 10px;
+    font-size: 17px;
+    border: none;
+}
+
+.header .search-container button {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 10px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+.header .search-container button:hover{
+    background: #ccc;
+}
+
+.navbar{
+    overflow: hidden;
+    background-color: #333;
+}
+  
+.navbar a{
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+.dropdown{
+    float: left;
+    overflow: hidden;
+}
+  
+.dropdown .dropbtn{
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+  
+.navbar a:hover, .dropdown:hover .dropbtn{
+    background-color: red;
+}
+  
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown-content a{
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+  
+.dropdown-content a:hover{
+    background-color: #ddd;
+}
+  
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	font-family: 'Jost', sans-serif;
+}
+body .main{
+	width: 350px;
+	height: 500px;
+	background: #111e6c;
+	border-radius: 10px;
+	box-shadow: 5px 20px 50px #000;
+    margin: auto;
+}
+body .main #chk{
+	display: none;
+}
+body .main .signup{
+	position: relative;
+	width:100%;
+	height: 100%;
+}
+body .main .signup label{
+	color: #fff;
+	font-size: 2.3em;
+	justify-content: center;
+	display: flex;
+	margin: 60px;
+	font-weight: bold;
+	cursor: pointer;
+	transition: .5s ease-in-out;
+}
+body .main .login input{
+	width: 60%;
+	height: 20px;
+	background: #e0dede;
+	justify-content: center;
+	display: flex;
+	margin: 20px auto;
+	padding: 10px;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+}
+body .main .login label{
+	color: #fff;
+	font-size: 2.3em;
+	justify-content: center;
+	display: flex;
+	margin: 60px;
+	font-weight: bold;
+	cursor: pointer;
+	transition: .5s ease-in-out;
+}
+body .main .signup input{
+	width: 60%;
+	height: 20px;
+	background: #e0dede;
+	justify-content: center;
+	display: flex;
+	margin: 20px auto;
+	padding: 10px;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+}
+body .main .signup button{
+	width: 60%;
+	height: 40px;
+	margin: 10px auto;
+	justify-content: center;
+	display: block;
+	color: #fff;
+	background: #573b8a;
+	font-size: 1em;
+	font-weight: bold;
+	margin-top: 20px;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	transition: .2s ease-in;
+	cursor: pointer;
+}
+body .main .login button{
+	width: 60%;
+	height: 40px;
+	margin: 10px auto;
+	justify-content: center;
+	display: block;
+	color: #fff;
+	background: #573b8a;
+	font-size: 1em;
+	font-weight: bold;
+	margin-top: 20px;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	transition: .2s ease-in;
+	cursor: pointer;
+}
+body .main .signup button:hover{
+	background: #6d44b8;
+}
+body .main .login button:hover{
+	background: #6d44b8;
+}
+.login{
+	height: 460px;
+	background: #333333;
+	border-radius: 60% / 10%;
+	transform: translateY(-180px);
+	transition: .8s ease-in-out;
+}
+.login label{
+	color: #573b8a;
+	transform: scale(.6);
+}
+
+#chk:checked ~ .login{
+	transform: translateY(-500px);
+}
+#chk:checked ~ .login label{
+	transform: scale(1);	
+}
+#chk:checked ~ .signup label{
+	transform: scale(.6);
+}
+footer{
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1170px;
+    margin:auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul{
+    list-style: none;
+}
+
+.footer{
+    background-color: #24262b;
+      padding: 70px 0;
+}
+
+.footer-col{
+     width: 25%;
+     padding: 0 15px;
+}
+
+.footer-col h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+  .footer-col ul li a:hover{
+    color: #ffffff;
+    padding-left: 8px;
+}
+
+.footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin:0 18px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links i{
+    margin-top: 12px;
+}
+
+.footer-col .social-links a:hover{
+    color: #24262b;
+    background-color: #ffffff;
+}
